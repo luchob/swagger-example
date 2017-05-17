@@ -1,6 +1,8 @@
 package eu.balev.demo.swagger.web;
 
 import io.swagger.annotations.ApiOperation;
+import io.swagger.annotations.ApiResponse;
+import io.swagger.annotations.ApiResponses;
 
 import java.net.URI;
 import java.util.Collection;
@@ -43,6 +45,10 @@ public class StudentController {
 	 * @return
 	 */
 	@ApiOperation("Retrieves a student by the given ID.")
+	@ApiResponses(value = { 
+		      @ApiResponse(code = 404, message = "Student not found."),
+		      @ApiResponse(code = 200, message = "OK") 
+		      })
 	@RequestMapping(
 			method = RequestMethod.GET, 
 			value = "/api/students/{studentId}", 
@@ -78,7 +84,8 @@ public class StudentController {
 	 * @return
 	 */
 	@ApiOperation("Creates a new student.")
-	@RequestMapping(method = RequestMethod.POST, value = "/api/students", 
+	@RequestMapping(method = RequestMethod.POST, 
+			value = "/api/students", 
 			consumes = MediaType.APPLICATION_JSON_VALUE, 
 			produces = MediaType.APPLICATION_JSON_VALUE)
 	public ResponseEntity<Student> createStudent(@RequestBody Student student) {
