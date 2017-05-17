@@ -51,7 +51,9 @@ Start the application. Download a binary distribution of swagger codegen CLI, fo
 java -jar swagger-codegen-cli-2.2.2.jar generate -l html2 -i http://localhost:8080/v2/api-docs -o docs
 ```
 
-The command will generate static HTML documentation and store it in the `docs` folder. 
+The command will generate static HTML documentation and store it in the `docs` folder. All this is not as good as Swagger UI and looks like this at the time of writing: 
+
+![image](https://cloud.githubusercontent.com/assets/10339738/26173363/35f9f8d2-3b54-11e7-93df-e0ca9d144b07.png)
 
 
 # Automation
