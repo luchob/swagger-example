@@ -1,0 +1,8 @@
+.gradle/
+bin
+.project
+.classpath
+.settings
+build/
+application-dev.properties
+todo.txt
