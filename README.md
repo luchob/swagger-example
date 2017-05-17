@@ -21,7 +21,7 @@ This will make the app available at [http://localhost:8080](http://localhost:808
 
 The REST API is secured with Basic Authentication. The application has one built in user with name `lucho` and password `test`. It operates with H2 inmemory database.
 
-# Exploring the API with the built in Swagger UI client
+# Exploring the REST API with the built in Swagger UI client
 
 Start the application. The Swagger UI is exposed at the following endpoint [http://localhost:8080/swagger-ui.html](http://localhost:8080/swagger-ui.html).
 
