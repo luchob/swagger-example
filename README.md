@@ -15,7 +15,7 @@ To start the application clone the project. It comes with gradlew wrapper so the
 
 `gradlew bootRun`
 
-This will make the app available at (http://localhost:8080)[http://localhost:8080]
+This will make the app available at [http://localhost:8080](http://localhost:8080)
 
 ## Authentication
 
@@ -23,6 +23,6 @@ The REST API is secured with Basic Authentication. The application has one built
 
 # Exploring the API with the built in Swagger UI client
 
-Start the application. The Swagger UI is exposed at the following endpoint (http://localhost:8080/swagger-ui.html)[http://localhost:8080/swagger-ui.html].
+Start the application. The Swagger UI is exposed at the following endpoint [http://localhost:8080/swagger-ui.html](http://localhost:8080/swagger-ui.html).
 
 This endpoint is normally not available in production system thus the application is configured to expose it only when the current active profile is `dev`. The application is by default started with this profile.
