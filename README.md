@@ -1,3 +1,3 @@
-# Welcome to PushMe!
+# Welcome to Swagger Example!
 
-PushMe is a developer tool for capturing and inspecting webhooks. For more details feel welcome to check our [wiki](https://github.com/luchob/pushme/wiki).
+This application is under construction right now and is not complete!
