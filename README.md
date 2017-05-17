@@ -35,10 +35,14 @@ The REST API is currently secured with Basic Authentication. The application has
 
 Start the application. The Swagger UI is exposed at the following endpoint [http://localhost:8080/swagger-ui.html](http://localhost:8080/swagger-ui.html).
 
-This endpoint is normally not available in production system thus the application is configured to expose it only when the current active profile is `dev`. The application is by default started with this profile.
+This endpoint is normally not available in production system thus the application is configured to expose it only when the current active profile is `dev`. The application is by default started with this profile. The UI should look similar to the one below (at the time of writing).
+
+![image](https://cloud.githubusercontent.com/assets/10339738/26170556/89282b28-3b4a-11e7-8226-d9ff9e30f144.png)
 
 # Exploring the REST API with stand alone Swagger UI
 
+It is neither required nor even recommended to bundle Swagger UI with the application the standalone client might be used. Clone the [Sagger UI](https://github.com/swagger-api/swagger-ui.git). This may take some time. Change to `swagger-ui`. 
+
+# The Big Picture
+
 TODO
-
-
