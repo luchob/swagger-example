@@ -41,7 +41,7 @@ This endpoint is normally not available in production system thus the applicatio
 
 # Exploring the REST API with stand alone Swagger UI
 
-It is neither required nor even recommended to bundle Swagger UI with the application the standalone client might be used. Clone the [Sagger UI](https://github.com/swagger-api/swagger-ui.git). This may take some time. Change to `swagger-ui`. 
+Start the application. It is neither required nor even recommended to bundle Swagger UI with the application the standalone client might be used. Clone the [Sagger UI](https://github.com/swagger-api/swagger-ui.git). This may take some time. Change to `swagger-ui\dist` and open `index.html` within your browser. In the URL input at the top of the page enter the URL of the Swagger Specification exposed by the application. This should be `http://localhost:8080/v2/api-docs`. Click explore.
 
 # The Big Picture
 
