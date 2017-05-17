@@ -43,6 +43,21 @@ This endpoint is normally not available in production system thus the applicatio
 
 Start the application. It is neither required nor even recommended to bundle Swagger UI with the application the standalone client might be used. Clone the [Sagger UI](https://github.com/swagger-api/swagger-ui.git). This may take some time. Change to `swagger-ui\dist` and open `index.html` within your browser. In the URL input at the top of the page enter the URL of the Swagger Specification exposed by the application. This should be `http://localhost:8080/v2/api-docs`. Click explore.
 
+# Generate static HTML documentation
+
+Start the application. Download a binary distribution of swagger codegen CLI, for example from [Maven](http://central.maven.org/maven2/io/swagger/swagger-codegen-cli/2.2.2/swagger-codegen-cli-2.2.2.jar). Note: check if newer version is available. Place the jar file in a directory of your choice and navigate to this directory. If the java environment is step correctly the following could be executed:
+
+```
+java -jar swagger-codegen-cli-2.2.2.jar generate -l html2 -i http://localhost:8080/v2/api-docs -o docs
+```
+
+The command will generate static HTML documentation and store it in the `docs` folder. 
+
+
+# Automation
+
+TODO
+
 # The Big Picture
 
 TODO
