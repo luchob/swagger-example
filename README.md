@@ -58,7 +58,11 @@ The command will generate static HTML documentation and store it in the `docs` f
 
 # Automation
 
-TODO
+Everything about `springfox` is nice but in order to generate a swagger specification the server needs to be running. This may not be perfect for CI. The swagger specification may be reqired in build time when there is no running server.
+
+## Generating Swagger documentation with gradle
+
+TODo
 
 # The Big Picture
 
