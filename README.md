@@ -1,15 +1,36 @@
+# Table of contents
+
+- [Welcome to the Swagger sample project!](#welcome-to-the-swagger-sample-project-)
+  * [Overview](#overview)
+  * [Starting the application](#starting-the-application)
+  * [Exploring the application (Eclipse)](#exploring-the-application--eclipse-)
+  * [Authentication](#authentication)
+- [Exploring the REST API with the built in Swagger UI client](#exploring-the-rest-api-with-the-built-in-swagger-ui-client)
+- [Exploring the REST API with stand alone Swagger UI](#exploring-the-rest-api-with-stand-alone-swagger-ui)
+- [Generate static HTML documentation](#generate-static-html-documentation)
+- [Automation](#automation)
+  * [Generating Swagger specification with gradle at build time](#generating-swagger-specification-with-gradle-at-build-time)
+- [The Big Picture](#the-big-picture)
+- [Feedback](#feedback)
+
+
+
 # Welcome to the Swagger sample project!
 
 ___
 This application as well as the documentation is under construction right now and is fully complete!
 ___
 
-There are several usages of Swagger discussed here.
+
+## Overview
+
+This sample application focuses on swagger and its usage in Spring porjects. There are several usages of Swagger discussed here.
 
 * generating the Swagger API specification with springfox
 * using a Swagger UI which is built in the application
 * using the Swagger UI stand alone
 * generating static REST API documentation
+* generating swagger build artifacts
 
 ## Starting the application
 
