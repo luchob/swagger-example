@@ -1,9 +1,9 @@
 # Table of contents
 
-- [Welcome to the Swagger sample project!](#welcome-to-the-swagger-sample-project-)
+- [Welcome to the Swagger sample project!](#welcome-to-the-swagger-sample-project)
   * [Overview](#overview)
   * [Starting the application](#starting-the-application)
-  * [Exploring the application (Eclipse)](#exploring-the-application--eclipse-)
+  * [Exploring the application (Eclipse)](#exploring-the-application--eclipse)
   * [Authentication](#authentication)
 - [Exploring the REST API with the built in Swagger UI client](#exploring-the-rest-api-with-the-built-in-swagger-ui-client)
 - [Exploring the REST API with stand alone Swagger UI](#exploring-the-rest-api-with-stand-alone-swagger-ui)
