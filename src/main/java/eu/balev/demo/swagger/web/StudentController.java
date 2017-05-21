@@ -1,5 +1,6 @@
 package eu.balev.demo.swagger.web;
 
+import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiResponse;
 import io.swagger.annotations.ApiResponses;
@@ -29,6 +30,7 @@ import eu.balev.demo.swagger.service.StudentService;
  * 
  * @author LBalev
  */
+@Api(tags="students")
 @RestController
 public class StudentController {
 

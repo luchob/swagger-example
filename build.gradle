@@ -1,6 +1,7 @@
 apply plugin: 'java'
 apply plugin: 'org.springframework.boot'
 apply plugin: 'eclipse'
+apply plugin: 'com.benjaminsproule.swagger'
 
 buildscript {
     repositories {
@@ -10,9 +11,9 @@ buildscript {
     }
     dependencies {
         classpath 'org.springframework.boot:spring-boot-gradle-plugin:1.5.3.RELEASE'
+		classpath 'com.benjaminsproule:swagger-gradle-plugin:0.0.6'
     }
 }
-
 
 jar {
     baseName = 'swagger-example'
@@ -36,4 +37,33 @@ dependencies {
 	
     testCompile("org.springframework.boot:spring-boot-starter-test")
 	testCompile("org.springframework.security:spring-security-test")
+}
+
+swagger {
+	apiSource {
+		springmvc = true
+		locations = 'eu.balev.demo.swagger'
+		basePath = '/api'
+		info {
+			title = 'Students API'
+			description = 'The super heroic student API.'
+			version = '1.0'
+			contact {
+				email = 'someone@example-rest-api.com'
+				name = 'Lachezar Balev'
+				url = 'http://balev.eu'
+			}
+			license {
+				url = 'http://www.apache.org/licenses/LICENSE-2.0.html'
+				name = 'Apache 2.0'
+			}
+		}
+		securityDefinition {
+			name = 'Basic Authentication'
+			type = 'basic'
+		}
+		swaggerDirectory = "${project.rootDir}/generated/swagger-json"
+		swaggerApiReader = 'com.github.kongchen.swagger.docgen.reader.SpringMvcApiReader'
+		modelConverters = [ 'io.swagger.validator.BeanValidator' ]
+	}
 }

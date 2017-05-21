@@ -1,5 +1,6 @@
 package eu.balev.demo.swagger.web;
 
+import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 
 import java.util.ArrayList;
@@ -14,6 +15,7 @@ import org.springframework.web.bind.annotation.RestController;
 import eu.balev.demo.swagger.domain.Course;
 import eu.balev.demo.swagger.repository.CourseRepository;
 
+@Api(tags="courses")
 @RestController
 public class CourseController {
 
