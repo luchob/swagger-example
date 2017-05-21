@@ -33,7 +33,7 @@ The REST API is currently secured with Basic Authentication. The application has
 
 # Exploring the REST API with the built in Swagger UI client
 
-Start the application. The Swagger UI is exposed at the following endpoint [http://localhost:8080/swagger-ui.html](http://localhost:8080/swagger-ui.html).
+Start the application. The Swagger UI is exposed at the following endpoint (http://localhost:8080/swagger-ui.html)[http://localhost:8080/swagger-ui.html].
 
 This endpoint is normally not available in production system thus the application is configured to expose it only when the current active profile is `dev`. The application is by default started with this profile. The UI should look similar to the one below (at the time of writing).
 
