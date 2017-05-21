@@ -60,13 +60,13 @@ The command will generate static HTML documentation and store it in the `docs` f
 
 Everything about `springfox` is nice but in order to generate a swagger specification the server needs to be running. This may not be perfect for CI. The swagger specification may be reqired in build time when there is no running server.
 
-## Generating Swagger documentation with gradle at build time
+## Generating Swagger specification with gradle at build time
 
 At the time of writing there is no very good support for gradle. Maven is the favoured build system. There is a nice [maven plugin](https://github.com/kongchen/swagger-maven-plugin). This project uses a [gradle port](https://github.com/gigaSproule/swagger-gradle-plugin) of the plugin. To generate swagger specification execute:
 
 `gradlew swagger`
 
-The swagger spec is available under the project root in `\generated\swagger-json`. The swagger spec may be used in various ways, e.g. it may be even tried out in the (online swagger editor)[http://editor.swagger.io/]
+The swagger spec is available under the project root in `\generated\swagger-json`. The swagger spec may be used in various ways, e.g. it may be even tried out in the [online swagger editor](http://editor.swagger.io/).
 
 # The Big Picture
 
