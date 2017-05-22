@@ -19,11 +19,6 @@
 
 # Welcome to the Swagger sample project!
 
-___
-This application as well as the documentation is under construction right now and is fully complete!
-___
-
-
 ## Overview
 
 This sample application focuses on swagger and its possible usage scenarios in Spring Boot porjects. CI is taken into account. Several scenarios are discussed here.
