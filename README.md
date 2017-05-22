@@ -92,6 +92,18 @@ gradlew swagger
 
 The swagger spec is available under the project root in `\generated\swagger-json`. The swagger spec may be used in various ways, e.g. it may be even tried out in the [online swagger editor](http://editor.swagger.io/). It can be deployed as a release artifact.
 
+## Sample usage of the swagger spec
+
+The project comes with a sample gradle plugin for `swagger2markup` which is able to generate Ascii Doc from the swagger specification. To see it in action execute:
+
+```
+gradlew build 
+gradlew swagger
+gradlew convertSwagger2markup -b swagger2makup.gradle
+```
+
+The output will be generated in under `generated/asciidoc`.
+
 # The Big Picture
 
 TODO
