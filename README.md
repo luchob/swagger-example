@@ -119,7 +119,10 @@ The output will be normally generated under `generated\swagger-test`.
 
 # The Big Picture
 
-TODO
+Below is a diagram which may show "the big picture" emerging from all those usage scenarios above.
+
+![image](https://cloud.githubusercontent.com/assets/10339738/26324703/8f301a80-3f3c-11e7-875f-fdee6cfa453e.png)
+
 
 # Feedback
 
