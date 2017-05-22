@@ -11,6 +11,7 @@
 - [Automation](#automation)
   * [Generating Swagger specification with gradle at build time](#generating-swagger-specification-with-gradle-at-build-time)
   * [Sample usage of the Swagger spec](#sample-usage-of-the-swagger-spec)
+  * [Generating the Swagger spec with an integration test](#generating-the-swagger-spec-with-an-integration-test)
 - [The Big Picture](#the-big-picture)
 - [Feedback](#feedback)
 
@@ -25,13 +26,14 @@ ___
 
 ## Overview
 
-This sample application focuses on swagger and its usage in Spring porjects. There are several usages of Swagger discussed here.
+This sample application focuses on swagger and its possible usage scenarios in Spring Boot porjects. CI is taken into account. Several scenarios are discussed here.
 
-* generating the Swagger API specification with springfox
-* using a Swagger UI which is built in the application
-* using the Swagger UI stand alone
+* generating the Swagger API specification with springfox in a running server
+* using the Swagger UI which is built in the application
+* using the stand alone Swagger UI
 * generating static REST API documentation
-* generating swagger build artifacts
+* generating swagger spec as build artifact
+* using the swagger spec in project automation
 
 ## Starting the application
 
