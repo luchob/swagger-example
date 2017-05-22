@@ -5,7 +5,7 @@
   * [Starting the application](#starting-the-application)
   * [Exploring the application (Eclipse)](#exploring-the-application-eclipse)
   * [Authentication](#authentication)
-- [Exploring the REST API with the built in Swagger UI client](#exploring-the-rest-api-with-the-built-in-swagger-ui-client)
+- [Exploring the REST API with the built in Swagger UI client](#exploring-the-rest-api-with-a-built-in-swagger-ui-client)
 - [Exploring the REST API with stand alone Swagger UI](#exploring-the-rest-api-with-stand-alone-swagger-ui)
 - [Generate static HTML documentation](#generate-static-html-documentation)
 - [Automation](#automation)
@@ -52,9 +52,9 @@ Open eclipse and import the project as existing java project.
 
 The REST API is currently secured with Basic Authentication. The application has one built in user with name `lucho` and password `test`. 
 
-# Exploring the REST API with the built in Swagger UI client
+# Exploring the REST API with a built in Swagger UI client
 
-Start the application. The Swagger UI is exposed at the following endpoint (http://localhost:8080/swagger-ui.html)[http://localhost:8080/swagger-ui.html].
+Start the application. The Swagger UI is exposed at the following endpoint [http://localhost:8080/swagger-ui.html](http://localhost:8080/swagger-ui.html).
 
 This endpoint is normally not available in production system thus the application is configured to expose it only when the current active profile is `dev`. The application is by default started with this profile. The UI should look similar to the one below (at the time of writing).
 
