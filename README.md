@@ -10,6 +10,7 @@
 - [Generate static HTML documentation](#generate-static-html-documentation)
 - [Automation](#automation)
   * [Generating Swagger specification with gradle at build time](#generating-swagger-specification-with-gradle-at-build-time)
+  * [Sample usage of the Swagger spec](#sample-usage-of-the-swagger-spec)
 - [The Big Picture](#the-big-picture)
 - [Feedback](#feedback)
 
