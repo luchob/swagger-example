@@ -103,7 +103,9 @@ gradlew swagger
 gradlew convertSwagger2markup -b swagger2makup.gradle
 ```
 
-The output will be generated in under `generated/asciidoc`.
+The output will be generated in under `generated/asciidoc`. Sample rendering:
+
+![image](https://cloud.githubusercontent.com/assets/10339738/26308999/08e8e9f8-3f04-11e7-882b-b6c8ee7457c6.png)
 
 # The Big Picture
 
