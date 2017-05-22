@@ -107,6 +107,14 @@ The output will be generated in under `generated/asciidoc`. Sample rendering:
 
 ![image](https://cloud.githubusercontent.com/assets/10339738/26308999/08e8e9f8-3f04-11e7-882b-b6c8ee7457c6.png)
 
+## Generating the swagger spec with an integration test
+
+A mock MVC starts a minimalistic server which is capable enough to serve the swagger spec. A test case may be used to persist this spec. To try this out run:
+
+`gradlew clean test`
+
+The output will be normally generated under `generated\swagger-test`.
+
 # The Big Picture
 
 TODO
