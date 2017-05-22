@@ -11,6 +11,7 @@
 - [Automation](#automation)
   * [Generating Swagger specification with gradle at build time](#generating-swagger-specification-with-gradle-at-build-time)
   * [Sample usage of the Swagger spec](#sample-usage-of-the-swagger-spec)
+  * [Generating the Swagger spec with an integration test](#generating-the-swagger-spec-with-an-integration-test)
 - [The Big Picture](#the-big-picture)
 - [Feedback](#feedback)
 
@@ -18,20 +19,16 @@
 
 # Welcome to the Swagger sample project!
 
-___
-This application as well as the documentation is under construction right now and is fully complete!
-___
-
-
 ## Overview
 
-This sample application focuses on swagger and its usage in Spring porjects. There are several usages of Swagger discussed here.
+This sample application focuses on swagger and its possible usage scenarios in Spring Boot porjects. CI is taken into account. Several scenarios are discussed here.
 
-* generating the Swagger API specification with springfox
-* using a Swagger UI which is built in the application
-* using the Swagger UI stand alone
+* generating the Swagger API specification with springfox in a running server
+* using the Swagger UI which is built in the application
+* using the stand alone Swagger UI
 * generating static REST API documentation
-* generating swagger build artifacts
+* generating swagger spec as build artifact
+* using the swagger spec in project automation
 
 ## Starting the application
 
@@ -107,9 +104,20 @@ The output will be generated in under `generated/asciidoc`. Sample rendering:
 
 ![image](https://cloud.githubusercontent.com/assets/10339738/26308999/08e8e9f8-3f04-11e7-882b-b6c8ee7457c6.png)
 
+## Generating the swagger spec with an integration test
+
+A mock MVC starts a minimalistic server which is capable enough to serve the swagger spec. A test case may be used to persist this spec. To try this out run:
+
+`gradlew clean test`
+
+The output will be normally generated under `generated\swagger-test`.
+
 # The Big Picture
 
-TODO
+Below is a diagram which may show "the big picture" emerging from all those usage scenarios above.
+
+![image](https://cloud.githubusercontent.com/assets/10339738/26324703/8f301a80-3f3c-11e7-875f-fdee6cfa453e.png)
+
 
 # Feedback
 
