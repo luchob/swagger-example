@@ -67,3 +67,7 @@ swagger {
 		modelConverters = [ 'io.swagger.validator.BeanValidator' ]
 	}
 }
+
+test {
+	systemProperty 'SWAGGER_TEST_OUTPUT_DIR', "${project.rootDir}/generated/swagger-test"
+}
